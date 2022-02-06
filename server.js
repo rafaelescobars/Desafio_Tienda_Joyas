@@ -101,12 +101,6 @@ app.get('/api/v2/jewels', (req, res) => {
         `Page doesn't exist.`
       )
     }
-
-    // return res.send({
-    //   previous: `http://localhost:3000/api/v2/jewels?page=${page-1}`,
-    //   next: `http://localhost:3000/api/v2/jewels?page=${page*1+1}`,
-    //   jewels: HATEOASV2().slice(page * 3 - 3, page * 3)
-    // })
   }
 
   res.send({
